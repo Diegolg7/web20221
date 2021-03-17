@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>La Santa Pizza</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <!-- 
+    ##############################
+    #         CABECERA           #
+    ##############################
+        Un grupo de navegación o contenido introductorio. 
+        Un elemento header normalmente contiene una sección de encabezado 
+        (un elemento h1-h6 o un elemento hgroup), 
+        pero puede contener otro tipo de elementos, 
+        como una tabla de contenidos, 
+        un formulario de búsqueda 
+        o cualquier logo importante.
+        En HTML5 usariamos la etiqueta HEADER
+    -->
+        <div id="cabecera">
+            <img src="https://cdn.pixabay.com/photo/2020/06/29/10/55/pizza-5352320_960_720.png" width="500">
+            <h1> <span class='spanmorado'>Pizzera "La santa Pizza"</span></h1>
+        </div>
+        <!-- 
+    ##############################
+    #         NAVEGACIÓN         #
+    ##############################
+El elemento <nav> representa una sección de una página 
+que enlaza con otras páginas o partes de la misma página: 
+una sección con enlaces de navegación.
+-->
+        <div id="nav">
+            <ul id="menu">
+                <li><a class="active" href="#informacion">Información</a></li>
+                <li><a href="#bocadillos">Pizzas</a></li>
+                <li><a href="#desayuno">Desayuno</a></li>
+                <li><a href="#reserva">Reserva tu pedido</a></li>
+                <li><a href="#video">Vídeo</a></li>
+            </ul>
+        </div>
+
+        <div id="contenido">
+            <div id="informacion" class="apartado">
+                <h1>Información Covid-19</h1>
+                <img src="https://cdn.pixabay.com/photo/2020/04/25/10/45/covid-19-5090262_960_720.jpg" width="350" >
+                <p>
+                    <mark>Barra</mark> Se recomienda cuando vayas a pedir o vayas a recoger las pizzas mantener la distancia de seguridad con las demás personas.
+                </p>
+                <p>
+                    <mark>Sala</mark> Habrá un aforo máximo de 150 personas, habrá geles hidroalcohólicos en la entrada y en la salida del local, para los aseos entrar de uno en uno y en cola manteniendo la distancia
+                </p>
+                <p>
+                    <mark> Recepción de pedidos:</mark> Cuando una persona recoja un pedido o toque la barra habrá un tramo de 2 minutos para que el limpiador desinfecte esa zona.
+                    </p<p>
+                    Se eliminarán los envoltorios de los productos antes de que entren en el local, se desinfectarán, uno por uno, y los productos frescos entrarán en box de plástico previamente desinfectado.
+                </p>
+
+            </div>
+
+            <div id="bocadillos" class="apartado">
+                <h1>Pizzas</h1>
+                <img src="https://cdn.pixabay.com/photo/2017/06/07/10/53/pizza-2380025_960_720.jpg" width="150">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Pizzas</th>
+                        <th>Ingredientes</th>
+                        <th>precio</th>
+                    </tr>
+					
+                    <tr>
+                        <td>1</td>
+                        <td>Pizza carbonara</td>
+                        <td>Champiñones y cebolla</td>
+                        <td>3.90</td>
+                    </tr>
+					
+                    <tr>
+                        <td>2</td>
+                        <td>Pizza margarita</td>
+                        <td>Jamon y queso</td>
+                        <td>3.90</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>Pizza cuatro quesos</td>
+                        <td>Queso azul,Mozarella,Chedar,Cabra</td>
+                        <td>3.90</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Pizza Turca</td>
+                        <td>Carne kebab cebolla nata salsa yogurt</td>
+                        <td>3.90</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="desayuno" class="apartado">
+                <h1>Desayuno</h1>
+                <img src="https://cdn.pixabay.com/photo/2014/04/03/11/08/tea-311845_960_720.png" width="200" >
+
+                <ul>
+                    <li>Café y tostada jamón
+                        <ul>
+                            <li>Entera: 3.20</li>
+                            <li>Media: 2.00</li>
+                        </ul>
+                    </li>
+                    <li>Café y churros
+                        <ul>
+                            <li>Plato: 2.00</li>
+                            <li>Medio Plato: 1.00</li>
+                        </ul>
+                    </li>
+                    <li>Café y brownie
+                        <ul>
+                            <li>4.00</li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="reserva" class="apartado">
+                <h1>Reserva tu pedidos</h1>
+                <img src="https://cdn.pixabay.com/photo/2016/04/09/09/22/pizza-1317699_960_720.jpg" width="200">
+
+
+                <form action="#" target="" method="get" name="formDatosPersonales">
+
+
+                    <label for="alumno">IdAlumno</label>
+                    <input type="number" type="number" min="999" max="9999" name="alumno" id="alumno" placeholder="identificador del alumno" />
+                    <br>
+                    <label for="bocadillo-select">Elige Una Pizza:</label>
+
+                    <select name="bocadillo" id="bocadillo-select">
+                    <option value="">--Elige una pizza--</option>
+                    <option value="chorizo">Carbonara</option>
+                    <option value="beacon">Margarita</option>
+                    <option value="choped">Cuatro quesos</option>
+                    </select>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="Deja una nota sobre el pedido" maxlength="300"></textarea>
+
+                    <input type="submit" name="enviar" value="enviar datos" />
+                </form>
+            </div>
+
+            <div id="video" class="apartado">
+                <h1>¡No te vas a arrepentir de la pizza que te vas a comer!</h1>
+                <p>Aquí os muestro un video de nuestra creación de la pizza</p>
+                <iframe width="560" height="315" src="<iframe width="560" height="315" src="https://www.youtube.com/watch?v=cUAlfuuH6SI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Web del Centro</p>
+                <iframe width="560" height="315" src="https://iesrafaelalberti.es/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+            <br>
+        </div>
+        <!-- 
+         ##############################
+         #      PIE DE PÁGINA         #
+         ##############################
+
+    En HTML5 usamos la etiqueta <footer>    
+    Representa el pie de una sección. Un pie tradicionalmente contiene 
+    información acerca de su sección, como quién escribió el contenido, 
+    enlaces relacionados, copyright y similares.
+  -->
+        <div id="pie">
+            <a href="https://iesrafaelalberti.es/v2/"><img src="images/logo.png" alt="Muestra el logo IES Rafael Alberti"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
